@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>join us</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/slider.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.7.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script>
+		$(document).ready(function(){
+			$('.slider')._TMS({
+				show:0,
+				pauseOnHover:true,
+				prevBu:'.prev',
+				nextBu:'.next',
+				playBu:false,
+				duration:500,
+				preset:'fade',
+				pagination:true,//'.pagination',true,'<ul></ul>'
+				pagNums:false,
+				slideshow:8000,
+				numStatus:false,
+				banners:'fromBottom',// fromLeft, fromRight, fromTop, fromBottom
+				waitBannerAnimation:false,
+				progressBar:false
+			})
+			
+	 	}) 
+		$(function(){
+		  if($(window).width() <= 1066)
+			{
+			  $("#slider .prev").css("left", "55px")
+			  $("#slider .next").css("right", "55px")
+			}
+		})
+	</script>
+	<!--[if lt IE 8]>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+   		<script type="text/javascript" src="js/html5.js"></script>
+    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+	<![endif]-->
+</head>
+<body>
+<div class="bg">
+   <header>
+     <div class="main wrap">
+       <h1><img src="images/mz.png" width="167" height="67"></h1>
+       <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;官方微博 <span>袂卓移动开发工作室</span></p>
+     </div>
+     <nav> 
+          <ul class="menu">
+              <li class="current"><a href="index.html" class="home"><img src="images/home.jpg" alt=""></a></li>
+              <li><a href="about us.html">团队介绍</a></li>
+              <li><a href="product.html">产品介绍</a></li>
+              <li><a href="our profession.html">承接业务</a></li>
+              <li><a href="learning resource.html">学习资源</a></li>
+			  <li></li>
+			  <li><a href="join us.html">加入我们</a></li>
+			  <li><a href=" work environment.html">工作环境</a></li>
+			  <li><a href="#">官方论坛</a></li>
+          </ul>
+          <div class="clear"></div>
+     </nav>
+   </header>
+    <!--==============================content================================-->
+   <section id="content"><div class="ic"></div>
+      <div class="sub-page">
+      	<div class="sub-page-left box-9">
+        	<h2>join us </h2>
+            <form id="form" method="post" action="join.php" >
+              <fieldset>
+                <label><input type="text" value="Name" name="Name" onBlur="if(this.value=='') this.value='Name'" onFocus="if(this.value =='Name' ) this.value=''"></label>
+                <label><input type="text" value="Email" name="Email" onBlur="if(this.value=='') this.value='Email'" onFocus="if(this.value =='Email' ) this.value=''"></label>
+                <label><input type="text" value="Phone" name="Phone" onBlur="if(this.value=='') this.value='Phone'" onFocus="if(this.value =='Phone' ) this.value=''"></label>
+                <label><textarea name="MESSAGE" onBlur="if(this.value==''){this.value='MESSAGE'}" onFocus="if(this.value=='MESSAGE'){this.value=''}">MESSAGE</textarea></label>
+                <div class="btns"><a href="join us.html" class="button">清除</a><a class="button" onClick="document.getElementById('form').submit()">发送</a></div>
+              </fieldset>  
+            </form> 
+        </div>
+        <div class="sub-page-right">
+            <h2>找到我们</h2>
+            <div class="map"><!-- TemplateBeginEditable name="EditRegion1" --><img src="images/ditu.jpg" width="200" height="250"><!-- TemplateEndEditable --></div>
+            <dl class="adr">
+                <dt>五邑大学陆佑图书馆二楼202</dt>
+                <dd>&nbsp;</dd>
+                <dd><a href="#" class="link"></a></dd>
+            </dl> 
+        </div>
+      </div>  
+   </section> 
+  <!--==============================footer=================================-->
+   <footer>
+      <p>袂卓团队</p>
+      <p>www.meizhuo.com</p>
+    </footer>	
+</div> 
+</body>
+</html>
