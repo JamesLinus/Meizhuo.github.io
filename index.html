@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>五邑大学袂卓工作室</title>
     <meta charset="utf-8">
@@ -11,34 +12,33 @@
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/tms-0.4.1.js"></script>
     <script>
-		$(document).ready(function(){
-			$('.slider')._TMS({
-				show:0,
-				pauseOnHover:true,
-				prevBu:'.prev',
-				nextBu:'.next',
-				playBu:false,
-				duration:500,
-				preset:'fade',
-				pagination:true,//'.pagination',true,'<ul></ul>'
-				pagNums:false,
-				slideshow:8000,
-				numStatus:false,
-				banners:'fromBottom',// fromLeft, fromRight, fromTop, fromBottom
-				waitBannerAnimation:false,
-				progressBar:false
-			})
-			
-	 	}) 
-		$(function(){
-		  if($(window).width() <= 1066)
-			{
-			  $("#slider .prev").css("left", "55px")
-			  $("#slider .next").css("right", "55px")
-			}
-		})
-	</script>
-	<!--[if lt IE 8]>
+    $(document).ready(function() {
+        $('.slider')._TMS({
+            show: 0,
+            pauseOnHover: true,
+            prevBu: '.prev',
+            nextBu: '.next',
+            playBu: false,
+            duration: 500,
+            preset: 'fade',
+            pagination: true, //'.pagination',true,'<ul></ul>'
+            pagNums: false,
+            slideshow: 8000,
+            numStatus: false,
+            banners: 'fromBottom', // fromLeft, fromRight, fromTop, fromBottom
+            waitBannerAnimation: false,
+            progressBar: false
+        })
+
+    })
+    $(function() {
+        if ($(window).width() <= 1066) {
+            $("#slider .prev").css("left", "55px")
+            $("#slider .next").css("right", "55px")
+        }
+    })
+    </script>
+    <!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
@@ -47,131 +47,128 @@
     <![endif]-->
     <!--[if lt IE 9]>
 
-   		<script type="text/javascript" src="js/html5.js"></script>
-    	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-	<![endif]-->
+      <script type="text/javascript" src="js/html5.js"></script>
+      <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
     <style type="text/css">
-<!--
-.STYLE1 {font-size: x-large}
-.STYLE2 {font-size: 12px}
--->
+    <!-- .STYLE1 {
+        font-size: x-large
+    }
+    .STYLE2 {
+        font-size: 12px
+    }
+    -->
     </style>
 </head>
+
 <body>
-<div class="bg">
-   <header>
-     <div class="main wrap">
-       <h1><img src="images/mz.png" width="167" height="67"></h1>
-       <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;官方微博 <span>袂卓移动开发工作室</span></p>
-     </div>
-     <nav>  
-          <ul class="menu">
-              <li class="current"><a href="index.html" class="home"><img src="images/home.jpg" alt=""></a></li>
-              <li><a href="about us.html">团队介绍</a></li>
-              <li><a href="product.html">产品介绍</a></li>
-              <li><a href="our profession.html">承接业务</a></li>
-              <li><a href="learning resource.html">学习资源</a></li>
-			  <li></li>
-			  <li><a href="join us.html">加入我们</a></li>
-			  <li><a href=" work environment.html">工作环境</a></li>
-			  <li><a href="#">官方论坛</a></li>
-          </ul>
-          <div class="clear"></div>
-     </nav>
-   </header>
-   <div id="slider">
-       <div class="slider-block">
-          <div class="slider">
-              <ul class="items">
-                  <li><img src="images/000-1.jpg" alt="" /></li>
-                  <li><img src="images/11-1.jpg" alt="" /></li>
-                  <li><img src="images/2222-1.jpg" alt="" /></li>
-                 <li><img src="images/33331.jpg" alt="" /></li>
-              </ul>
-          </div>
-          <a href="#" class="prev"></a>
-          <a href="#" class="next"></a>
-     </div>
-  </div>
-   <!--==============================content================================-->
-   <section id="content"><div class="ic"></div>
-      <div class="block-1 box-1">
-        <div><img src="images/dian (2).jpg" width="212" height="185">
-          <p class="text-2 STYLE1">&nbsp;</p>
-          <p class="text-2 STYLE1">电子商务与营销</p>
-          <p class="text-2 STYLE1">&nbsp;</p>
-          <p class="upper STYLE2">网络市场调查，线上客服，网络推广，团购业务，淘宝代购。</p>
-            <a href="#" class="button">了解更多</a>
-        </div>
-        <div><img src="images/wang (2).jpg" width="212" height="185">
-            <p class="text-2 STYLE1">&nbsp;</p>
-            <p class="text-2 STYLE1">网建设计与开发</p>
-            <p class="text-2 STYLE1">&nbsp;</p>
-            <p class="upper STYLE2">在这里，我们有一支建站优秀队伍，擅长多种网络编程语言和网络开发技术。</p>
-            <a href="#" class="button">了解更多</a>
-        </div>
-        <div><img src="images/an (2).jpg"width="212" height="185">
-            <p class="text-2 STYLE1">&nbsp;</p>
-            <p class="text-2 STYLE1">安卓软件开发</p>
-            <p class="text-2 STYLE1">&nbsp;</p>
-            <p class="upper STYLE2">软件或者系统中的软件部分，专业需求捕捉，需求分析，设计，实现和测试。<a href="#" class="button">了解更多</a>        </p>
-        </div>
-        <div class="last"><img src="images/mei (2).jpg" width="212" height="185">
-            <p class="text-2 STYLE1">&nbsp;</p>
-            <p class="text-2 STYLE1">美工美化与设计</p>
-            <p class="text-2 STYLE1">&nbsp;</p>
-            <p class="upper STYLE2">在这里，我们有一支美工杰出队伍，精通网站设计、平面设计、网店设计。</p>
-            <a href="#" class="button">了解更多</a>
-        </div>
-      </div>
-      <div class="block-2 wrap pad-2">
-      	<div class="box-2">
-        	<h2 class="clr-1">每日小知识</h2>
-          <div class="comments">
-            	<div>
-                	“Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie con
-                	  <div class="comments-corner"></div>
-               	  sequat.”           	  </div>
-              <a href="#" class="STYLE2">建站</a>            </div>
-            <div class="comments">
-            	<div>
-                	“vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit.”
-                	<div class="comments-corner"></div>
-                </div>
-                <a href="#" class="STYLE2">安卓</a>            </div>
-        </div>
-        <div class="box-3">
-        	<h2 class="clr-1">袂卓公告</h2>
-            <div class="wrap">
-            	<ul class="list-1">
-                <li><a href="#"><?php  echo $ip;  ?></a></li>
-                	<li><a href="#">祝贺袂卓团队在全国大学生网络 商务应用大赛荣获一等奖</a></li>
-                    <li><a href="#">ETips新版上市公告</a></li>
-                    <li><a href="#">欢迎大家使用邑大唱吧</a></li>
-                    <li><a href="#">袂卓工作室成功举办第二届电子商务</a></li>
-                    <li><a href="#">邑大软件大赛袂卓三只队伍进入决赛</a></li>
-                    <li><a href="#">袂卓团体全体成员出游珠海</a></li>
+    <div class="bg">
+        <header>
+            <div class="main wrap">
+                <h1>
+                    <img src="images/mz.png" width="167" height="67">
+                </h1>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;官方新浪微博
+                    <span id="btn-weibo">袂卓移动开发工作室</span>
+                </p>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li class="current">
+                        <a href="index.html" class="home">
+                            <img src="images/home.jpg" alt="">
+                        </a>
+                    </li>
+                 <!--    <li><a href="about us.html">团队介绍</a>
+                    </li> -->
+                    <li><a href="product.html">产品介绍</a>
+                    </li>
+                    <li><a href="our profession.html">承接业务</a>
+                    </li>
+                    <li><a href="learning resource.html">学习资源</a>
+                    </li>
+                    <li></li>
+                    <li><a href="http://meizhuo.github.io/Recruitment-2014/">加入我们</a>
+                    </li>
+                    <li><a href="work environment.html">工作环境</a>
+                    </li>
+
                 </ul>
-          </div>
-            <a href="http://meizhuo.org/mz/newsManage/newsList.php" class="button-2">Read More</a>
-        </div>    
-      </div>  
-   </section> 
-  <!--==============================footer=================================-->
-    <footer>
-      <p>袂卓团队</p>
-      <p>www.meizhuo.org</p>
-    </footer>	
-</div> 
+                <div class="clear"></div>
+            </nav>
+        </header>
+        <div id="slider">
+            <div class="slider-block">
+                <div class="slider">
+                    <ul class="items">
+                        <li>
+                            <img src="images/000-1.jpg" alt="" />
+                        </li>
+                        <li>
+                            <img src="images/11-1.jpg" alt="" />
+                        </li>
+                        <li>
+                            <img src="images/2222-1.jpg" alt="" />
+                        </li>
+                        <li>
+                            <img src="images/33331.jpg" alt="" />
+                        </li>
+                    </ul>
+                </div>
+                <a href="#" class="prev"></a>
+                <a href="#" class="next"></a>
+            </div>
+        </div>
+        <!--==============================content================================-->
+        <section id="content">
+            <div class="ic"></div>
+            <div class="block-1 box-1">
+                <div>
+                    <img src="images/dian (2).jpg" width="212" height="185">
+                    <p class="text-2 STYLE1">&nbsp;</p>
+                    <p class="text-2 STYLE1">电子商务与营销</p>
+                    <p class="text-2 STYLE1">&nbsp;</p>
+                    <p class="upper STYLE2">网络市场调查，线上客服，网络推广，团购业务，淘宝代购。</p>
+                </div>
+                <div>
+                    <img src="images/wang (2).jpg" width="212" height="185">
+                    <p class="text-2 STYLE1">&nbsp;</p>
+                    <p class="text-2 STYLE1">网建设计与开发</p>
+                    <p class="text-2 STYLE1">&nbsp;</p>
+                    <p class="upper STYLE2">在这里，我们有一支建站优秀队伍，擅长多种网络编程语言和网络开发技术。</p>
+                </div>
+                <div>
+                    <img src="images/an (2).jpg" width="212" height="185">
+                    <p class="text-2 STYLE1">&nbsp;</p>
+                    <p class="text-2 STYLE1">安卓软件开发</p>
+                    <p class="text-2 STYLE1">&nbsp;</p>
+                    <p class="upper STYLE2">基于Android系统开发稳定可靠的应用，善用开源技术解决问题</p>
+                    <p class="text-2 STYLE1">&nbsp;</p>
+                </div>
+                <div class="last">
+                    <img src="images/mei (2).jpg" width="212" height="185">
+                    <p class="text-2 STYLE1">&nbsp;</p>
+                    <p class="text-2 STYLE1">美工美化与设计</p>
+                    <p class="text-2 STYLE1">&nbsp;</p>
+                    <p class="upper STYLE2">在这里，我们有一支美工杰出队伍，精通网站设计、平面设计、网店设计。</p>
+                </div>
+            </div>
+
+        </section>
+        <!--==============================footer=================================-->
+        <footer>
+            <p>袂卓团队</p>
+            <p>www.meizhuo.org</p>
+        </footer>
+    </div>
 </body>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<script type="text/javascript">
+(function($) {
+    $('#btn-weibo').on('click', function() {
+        location = "http://weibo.com/u/3560618273";
 
-  ga('create', 'UA-54765812-2', 'auto');
-  ga('send', 'pageview');
-
+    });
+})(jQuery);
 </script>
+
 </html>
